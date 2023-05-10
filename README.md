@@ -1,4 +1,4 @@
-# To-do-list
+# To-do list
 
 ![to-do list](https://raw.githubusercontent.com/albewaz/to-do-list/master/images/Readme.md.gif)
 
