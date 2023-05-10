@@ -1,0 +1,8 @@
+.body {
+    background-color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+    word-break: break-all;
+    margin: 30px auto;
+    max-width: 1000px;
+}
+

@@ -1,0 +1,14 @@
+.section {
+    display:grid;
+    background-color: white;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    margin-top: 10px;
+}
+
+.section__header {
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+    border-bottom: solid 2px #eeeeee;
+}

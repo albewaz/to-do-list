@@ -1,0 +1,51 @@
+.task {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    padding: 20px;
+    border-bottom: solid 2px #eeeeee;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.js-done {
+    background-color: green;
+    color: white;
+    border: none;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.js-remove {
+    background-color: crimson;
+    color: white;
+    border: none;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task__content {
+    display: flex;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.task--done .task__content {
+    text-decoration: line-through;
+}
+
+.tasks {
+    padding-inline-start: 0;
+    display: block;
+}
