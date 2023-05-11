@@ -1,21 +1,17 @@
 .task {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    display: flex;
     padding: 20px;
-    border-bottom: solid 2px #eeeeee;
-    flex-grow: 1;
-    text-align: left;
-}
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 10px;
+ }
 
 .js-done {
     background-color: green;
     color: white;
     border: none;
-    min-width: 20px;
-    min-height: 20px;
+    min-width: 25px;
+    min-height: 25px;
     padding: 10px;
     cursor: pointer;
 }
@@ -24,8 +20,8 @@
     background-color: crimson;
     color: white;
     border: none;
-    min-width: 20px;
-    min-height: 20px;
+    min-width: 25px;
+    min-height: 25px;
     padding: 10px;
     cursor: pointer;
 }
@@ -36,8 +32,6 @@
     flex-grow: 1;
     text-align: left;
     font-size: 18px;
-    padding-left: 10px;
-    padding-right: 10px;
     vertical-align: middle;
 }
 
