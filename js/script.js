@@ -9,9 +9,7 @@
 
     render();
 
-    const newTaskInput = document.querySelector(".js-newTask");
-    newTaskInput.value = "";
-    newTaskInput.focus();
+    
   };
 
   const removeTask = (taskIndex) => {
@@ -70,12 +68,12 @@
     const newTaskInput = document.querySelector(".js-newTask");
     const newTaskContent = newTaskInput.value.trim();
 
-    if (newTaskContent === "") {
-      newTaskInput.focus();
-      return;
+    if (newTaskContent !== "") {
+      addNewTask(newTaskContent);
     }
 
-    addNewTask(newTaskContent);
+    newTaskInput.value = "";
+    newTaskInput.focus(); 
   };
 
   const init = () => {
@@ -86,11 +84,6 @@
     const addTaskButton = document.querySelector(".js-form button[type='submit']");
 
     form.addEventListener("submit", onFormSubmit);
-    addTaskButton.addEventListener("click", () => {
-      if (newTaskInput.value === "") {
-        newTaskInput.focus();
-      }
-    });
   };
 
   init();
